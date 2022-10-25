@@ -1,0 +1,229 @@
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #1e1e1e;
+}
+
+.container {
+  width: 850px;
+  height: 625px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 20px;
+  border-bottom: dotted #333 1px;
+  margin-bottom: 10px;
+}
+
+.header {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  font-size: 54px;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.header p {
+  margin: 0;
+  font-size: 85%;
+}
+
+.header .graph, .header .slider-holder {
+    width: 55%;
+}
+
+.header .slider-holder {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+}
+
+.counties path:hover {
+  stroke: #000;
+}
+
+.msa circle {
+  stroke: #000;
+}
+
+.states {
+  fill: none;
+  stroke: #fff;
+  stroke-linejoin: round;
+}
+
+.men {
+  fill: #3B8CC7;
+}
+
+.women {
+  fill: #DE6565;
+}
+
+.land {
+  fill: #DDD;
+}
+
+.hidden {
+  display: none;
+}
+
+circle {
+  pointer-events: auto;
+}
+
+circle.nearby {
+  pointer-events: none;
+}
+
+circle.nearby.hovering {
+  pointer-events: none;
+}
+
+a.ui-slider-handle {
+ outline: none; 
+}
+
+.slider-holder {
+  width: 300px;
+}
+
+.key {
+    display: inline-block;
+}
+
+.key p {
+    background: #EEE;
+    padding: 3px 5px;
+}
+
+a.less-pop, a.more-pop {
+  text-decoration: none;
+  font-weight: bold;
+  background: #333;
+  color: white;
+  height: 1em;
+  width: 1em;
+  overflow: auto;
+  display: inline-block;
+  text-align: center;
+  line-height: 0.8em;
+  vertical-align: middle;
+  margin-bottom: 1px;
+}
+
+a.less-pop:hover, a.more-pop:hover {
+  background: red;
+}
+
+.minimum-population {
+    font-weight: bold;
+}
+
+.graph {
+    background: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 10px;
+    height: 65px;
+}
+
+.graph path {
+    fill: none;
+}
+
+.graph path.men { 
+    stroke: #3B8CC7;
+}
+
+.graph path.women {
+    stroke: #DE6565;
+}
+
+.guide text {
+    font-size: 12px;
+}
+
+.per-1k {
+    font-weight: bold;
+}
+
+.notes div {
+    font-size: 12px;
+    width: 120px;
+}
+
+.key, .slider-holder {
+    visibility: hidden;
+}
+
+h3, .info {
+    width: 700px;
+    margin: 0 auto;
+}
+
+h3 {
+    font-size: 48px;
+}
+
+.info p {
+    margin: 0 0 0 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 10px;
+    background: white;
+    line-height: 1.5;
+}      
+
+.body {
+    font-size: 13px;
+    margin: auto;
+    width: 700px;
+}
+
+.body .info {
+  background-color: #f0555b;
+  margin-bottom: 30px;
+}
+      
+.body .info.alt {
+  background-color: #1d89ca;
+}
+
+.body .images {
+  background: none;
+}
+
+.body img {
+  max-width: 100%;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  border-top: dotted #333 1px;
+}
+
+.body h3 { 
+  margin: 0; 
+  padding: 0; 
+  font-size: 48px;
+  margin-top: 15px;
+  line-height: 40px;
+  padding-bottom: 10px;
+}
+
+.social {
+  width: 700px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.container .loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+a img { border: none; }

@@ -1,0 +1,20 @@
+THE INTERACTIVE SINGLES MAP KINDA PRESS KIT-ISH SORTA THING
+http://www.xoxosoma.com/singles
+by jonathan soma (me!)
+
+The files are pretty obviously named:
+
+18-64.png means it's the full-sized map of ages 18-64, raw difference between single men and single women
+18-64-adj.png means it's the full-sized map of ages 18-64, population-adjusted difference between single men and single women
+*-500.png means it's 500 pixels wide, nice and blog sized.
+
+FACTS:
+Single is counted as being never married, divorced or widowed. Married is married.
+After the mid 40's, there are a ton more women. Before that, the singles are mostly men.
+Around 1/3 of 20-24 year old women are married, compared to 1/5th for guys. That means a given girl is 1.6 times more likely to be married than a guy. But really i think the numbers are something more like 30% vs. 20%, so it's much more like 50% more likely.
+In times when the gender is mixed, men are mostly on the West Coast and women are in the east (not necessarily the coast - it's kind of Appalachians-y)
+The only two places with a surplus of women in the 20-29 age bracket are New Orleans, LA and Springfield, MA. Lynchburg, VA pops up, if you lower the minimum required population.
+The switchover from extra men to extra women starts at 35-39 for most big East Coast cities, but doesn't hit New York until 40-44.
+Reno, NV is the main male holdout after the age of 45.
+Homosexuality skews this towards there being the appearance of more single men than there actually are.
+Data is from the Census's 2006 American Community Survey

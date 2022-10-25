@@ -1,0 +1,68 @@
+.jslider {
+    background: #eeeeee;
+    border: solid #CCC 1px;
+    border-radius: 10px;
+    height: 12px;
+    top: 0;
+}
+
+.jslider .jslider-pointer {
+  z-index: 1;
+  height: 12px;
+}
+
+.jslider .jslider-bg .l {
+    background: none;
+}
+
+.jslider .jslider-bg .r {
+    background: none;
+}
+
+.jslider .jslider-bg i {
+    height: 12px;
+    background: #fff;
+}
+
+.jslider .jslider-bg .v {
+    background: #93D215;
+    background: #DE6565;
+/*    background: #3B8CC7;*/
+    height: 12px;
+}
+
+.jslider-pointer-mid {
+  z-index: 0;
+}
+
+.jslider .jslider-scale {
+  top: 0;
+  z-index: 1000;
+  color: black;
+}
+
+.jslider .jslider-scale span {
+    border-left-color: #000000;
+    height: 12px;
+}
+
+.jslider .jslider-pointer {
+    background: url('../img/handles-new.png');
+    width: 25px;
+    height: 25px;
+    top: -7px;
+}
+
+.jslider .jslider-pointer-mid {
+    margin-left: -2px;
+}
+
+.jslider-scale span ins {
+    display: none;
+}
+
+.jslider .jslider-pointer.jslider-pointer-mid {
+}
+.jslider .jslider-bg .f {
+    display: none;
+}

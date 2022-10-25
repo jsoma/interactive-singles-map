@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<link href="https://s3.amazonaws.com/jsoma/css/ui-lightness/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+<link href="https://s3.amazonaws.com/jsoma/css/jquery.slider.min.css" rel="stylesheet">
+<link href="https://s3.amazonaws.com/jsoma/css/tipsy.css" rel="stylesheet">
+<link href="https://s3.amazonaws.com/jsoma/css/style.css" rel="stylesheet">
+<link href="https://s3.amazonaws.com/jsoma/css/slider.css" rel="stylesheet">
+<title>The New, Interactive Singles Map.</title>
+<meta property="og:image" content="http://jonathansoma.com/singles/screencap.png"/>
+<meta property="og:title" content="The New, Interactive Singles Map"/>
+<meta property="og:url" content="http://jonathansoma.com/singles/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:description" content="An interactive map of where to find single men and women across America. NYC has 150,000 more single women, LA has 90,000 extra unmarried men. Pack your bags!"/>
+<meta property="fb:admins" content="1504164"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+</head>
+<body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=470493023002000";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="content">
+  <div class="container">
+  	<div class="header">
+    	<h1>Singles, <span class='youngest'>18</span>-<span class='oldest'>64</span></h1>
+      <div class="key">
+        <p>Showing cities of <a class="less-pop" href="#">-</a> <a class="more-pop" href="#">+</a> <span class="minimum-population"></span>+ people and <a class="seeking" href="#"></a> values</p>
+      </div>
+
+      <div class="graph" style="visibility: hidden;"></div>
+    
+    	<div class="slider-holder" style="visibility: hidden;">
+        <input id="slider" type="slider" name="age" value="18;64" />
+      </div>
+    </div>
+    <img src="img/loader.gif" class="loader">
+  </div>
+    <div class="social">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://jonathansoma.com/singles/" data-via="dangerscarf">Tweet</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  <div class="fb-like" data-send="false" data-href="http://jonathansoma.com/singles/" data-layout="button_count" data-width="90" data-show-faces="true"></div>
+  </div>
+  <div class="body">
+	<div class="info alt">
+      <p><strong>UPDATE:</strong> If you'd like to get a little closer look, I have some new maps up with singles-per-zipcode! <a href="http://visualizing.nyc/nyc-zip-codes-singles-map/">New York City</a> and the <a href="http://visualizing.nyc/bay-area-zip-codes-singles-map/">San Francisco Bay Area</a> are up so far.</p>
+	</div>
+    <h3>So here we are again.</h3>
+    <div class="info">
+      <p>Way back in 2006 a certain pop sociologist published <a href="http://www.boston.com/bostonglobe/ideas/articles/2008/03/30/a_singles_map_of_the_united_states_of_america/">a map</a> of <strong>singles across America.</strong> Men cursed, women swooned, and each and every unattached member of society packed up for the nearest City of Love. Trouble was, though, <strong>the map was a lie</strong>.</p>
+      <p>Well, <em>mostly</em> a lie. But <em>mostly</em> a lie is pretty bad when Life and Love are on the line. <p>His singles spanned from <strong>20 to 64 years old</strong>, a magical world where grandparents have to sneak booze to their 20-year-old partners. A little unrealistic, perhaps? The map also <strong>didn't adjust for population</strong> - ten thousand extra single women <strong>means a lot more in Des Moines than in NYC</strong>. If you'd like to hear more statistical griping, <a href="http://jonathansoma.com/singles/2006">the old write-up</a>.</p>
+      <p>For now, though: <strong>welcome to 2013 Interactive Singles Map</strong> (albeit with 2012 data). Drag those sliders to your heart's (dis)content.</p>
+      <p><em>Want to see some highlights? We've put together some depressingly accurate <a href="#images">images</a> down below.</em></p>
+    </div>
+
+    <h3>The cold, hard, sexy facts</h3>
+    <div class="info alt">
+      <p>Among 20- and 30-somethings, almost <strong>every single city in America has more single men than single women</strong>. Although no single woman in New York will believe it, I promise it's true.</p>
+      <p>Once you get up into your 50's, though, the balance shifts to <strong>extra single women everywhere</strong>.</p>
+      <p>The changeover from extra men to extra women starts in the <strong>late 30's</strong>, but doesn't overtake California and the Pacific Northwest until everyone's in their <strong>50's</strong>.</p>
+      <p>If you are looking for single women in their twenties, they're hiding out in <strong>Durham NC, Savannah GA, or Jackson MS.</strong> The North has nothing for you, it's Southern belles or bust.</p>
+      <p>If you're on the prowl for single men in their late 50's, <strong>Reno NV, Manchester NH, and Beaumont TX</strong> should be your primary hunting grounds. Beyond being flush with single gentleman, Beaumont <em>also</em> has one of the world's <a href="http://en.wikipedia.org/wiki/Fire_Museum_of_Texas">largest fire hydrants</a>! Get that U-Haul ready.</p>
+      <p><strong>Single</strong> counts people who have never been married, are divorced, or are widowed. It does <em>not</em> include separated people, because separated people sure ain't single. It also doesn't include people who are dating, because the Census Bureau isn't nosy enough.</p>
+    </div>
+
+    <h3>Cliff's Notes</h3>
+    <div class="info">
+      <p><strong>Gals:</strong> Do young single girls exist? Not according to math! Before age 35 almost <strong>every single city has an excess of unmarried men</strong>.</p>
+      <p><strong>Guys:</strong> F. Scott Fitzgerald published <strong>All The Sad Young Men</strong> at 30, and we can all just assume it's a somber reflection on marital gender ratios.</p>
+      <p><strong>Gents:</strong> Single men become a rare commodity later in life due to our unfortunate propensity for dying. If you can get to 50 the world seems to be nothing but women.</p>
+      <p><strong>Ladies:</strong> After your mid-40's, you will be fighting tooth and nail for the nine or ten remaining single men.</p>
+    </div>
+
+    <h3>Ch-ch-ch-changes</h3>
+    <div class="info alt">
+      <p>Way back in 2006, NYC had <strong>200,000 more single women than single men</strong>. By 2011, that'd shrunk down to 150,000. We can call that progress.</p>
+      <p>The <a href="http://www.familyfacts.org/charts/102/men-and-women-are-marrying-later">median age at first marriage</a> for women is 26.5, while for men it's almost 29. That's almost a <strong>whole year later than in 2006</strong>.</p>
+      <p>New Orleans used to be a great place to find an unmarried girl in her twenties, but now they've all migrated north to Jackson, Mississippi.</p>
+      <p>Every city with more single women in their twenties is <strong>in the South</strong>.</p>
+      <p>Reno, NV continues to be a great place to find a single man in his 50's.</p>
+      <p>As far as I can tell, we're still waiting on someone to title their thesis <strong>Social Adaptation and the Creation of the Cougar</strong>.</p>
+      <p><strong>Marriage equality</strong> is <a href="http://www.freedomtomarry.org/states/">an ongoing battle</a>, although some gay couples are <a href="http://www.nbcnews.com/id/44690992/ns/us_news-life/t/census-many-gay-couples-say-theyre-married-even-if-they-technically-arent/#.UavpdLTNgWY">reporting themselves as married</a>. The map unfortunately takes heterosexuality as a given, and I just plain can't think of a way around it.</p>
+      <p>Looking for a <strong>second opinion?</strong> Feel free to cast your lot with <a href="http://nycedc.tumblr.com/post/16175652438/ratio-of-single-men-to-single-women-in-nyc-new">New York Economic Development Corporation</a> or the number crunchers at <a href="http://trends.truliablog.com/2013/02/looking-for-love-in-all-the-right-places/">Trulia</a>.</p>
+    </div>
+
+    <h3>Who am I?</h3>
+    <div class="info">
+      <p>Hi, I'm <strong>Soma</strong>. I live in Brooklyn, write a newsletter that <a href="http://dabbles.in">makes you a more interesting person</a>, and run a <a href="http://brooklynbrainery.com">school for the curious</a>. I think mustard is the most underrated condiment.</p>
+      <p>Second year of college I got a <strong>D+ in statistics</strong> from talking too much to the girls who sat front of me. I didn't marry either of them, so <strong>we got this map instead</strong>.</p>
+      <p>You can hassle me anonymously at <a href="mailto:jonathan.soma@gmail.com">jonathan.soma@gmail.com</a> or see a steady stream of bodega cat pictures at <a href="http://twitter.com/dangerscarf">@dangerscarf</a>. Other nonsense I've created can be found at <a href="http://jonathansoma.com">jonathansoma.com</a>.
+    </div>
+
+    <h3>What's driving this thing?</h3>
+    <div class="info alt">
+       <p>Data is from the 2012 <a href="http://www.census.gov/acs/www/">American Community Survey</a>, Table B12002, <a href="http://www.socialexplorer.com/pub/ReportData/metabrowser.aspx?survey=ACS2012&ds=American+Community+Survey+2012&table=B12002&header=True">Sex By Marital Status By Age For The Population 15 Years And Over</a>. They're 3-year estimates because I figured, hey, sounds like a good balance between the 1-year and 5-year estimates.</p>
+       <p>We aren't <em>actually</em> measuring city by city, either. We're using <a href="http://en.wikipedia.org/wiki/Metropolitan_statistical_area">Metropolitan Statistical Areas</a>, which are generally a big city and its immediate surroundings. Sometimes it's a couple nearby cities, like Dallas/Fort Worth.</p>
+       <p>Codewise, the map itself is powered by <a href="http://d3js.org/">D3</a>. The <em>old</em> map was powered by <a href="http://www.processing.org/">Processing</a>, so I jumped through every hurdle possible to replicate the look.</p>
+    </div>
+
+    <a name="images" id="images"></a>
+    <h3>Share &amp; Scare</h3>
+    <div class="info" style="margin-bottom: 0">
+      <p>Looking to frighten your friends? Astonish your enemies? No better way than some quickfire images.</p>
+    </div>
+    <div class="images">
+      <a href="images/18-64-absolute.png" target="_new"><img src="images/18-64-absolute.png"></a>
+      <a href="images/20-29-relative.png" target="_new"><img src="img/loader.gif" data-src="images/20-29-relative.png"></a>
+      <a href="images/20-34-relative.png" target="_new"><img src="img/loader.gif" data-src="images/20-34-relative.png"></a>
+      <a href="images/30-39-relative.png" target="_new"><img src="img/loader.gif" data-src="images/30-39-relative.png"></a>
+      <a href="images/40-49-relative.png" target="_new"><img src="img/loader.gif" data-src="images/40-49-relative.png"></a>
+      <a href="images/50-59-relative.png" target="_new"><img src="img/loader.gif" data-src="images/50-59-relative.png"></a>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://s3.amazonaws.com/jsoma/js/polyfill.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="https://s3.amazonaws.com/jsoma/js/additions.js"></script>
+
+    <!--[if lte IE 8]>
+  <script type="text/javascript">
+    $(document).ready( function() {
+      $("img").unveil(200);
+      $(".header").html("<h1>Singles</h1><p>Sorry friend, couldn't get this working on IE8. You'll probably want to check out <a href='#images'>the non-interactive version</a>.</p>")
+    })
+  </script>
+  <![endif]-->
+  <script src="https://s3.amazonaws.com/jsoma/js/d3.v3.min.js"></script>
+
+<script src="https://s3.amazonaws.com/jsoma/js/queue.v1.min.js"></script>
+<script src="https://s3.amazonaws.com/jsoma/js/topojson.v1.min.js"></script>
+
+<script type="text/javascript" src="https://s3.amazonaws.com/jsoma/js/singles.js"></script>
+
+<body>
+<script>  
+var ages = [ 15, 18, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 75, 85 ];
+var usedAges = [ 18, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65 ];
+
+var ageDiff = usedAges[usedAges.length - 1] - usedAges[0];
+
+var ageScale = usedAges.map( function(age) {
+  var pct = parseInt((age - usedAges[0]) / ageDiff * 100);
+  return pct + "/" + age;
+});
+  
+var men = new Calculator(3);
+var women = new Calculator(96);
+
+var container = d3.select(".container");
+
+var width = d3.select(".container").style("width") ,
+    height = parseInt(d3.select(".container").style("height")) - parseInt(d3.select(".header").style("height"));
+
+var minimumPopulation = 250000;
+var census = d3.map();
+var geographies = d3.map();
+var centroids = d3.map();
+var guide;
+
+var projection = d3.geo.albers()
+      .parallels([29.5, 45.5])
+      .rotate([98, 0])
+      .center([5, 38])
+      .scale(1100);
+
+var quantize = d3.scale.threshold()
+    .domain([1.0389838067653974,1.085851188880827,1.153605094300842,1.280725277103516])
+    .range(d3.range(9).map(function(i) { return i * 10; }));
+
+var path = d3.geo.path()
+    .projection(projection);
+
+var svg = container.append("svg")
+    .attr("width", width )
+    .attr("height", height);
+
+queue()
+    .defer(d3.json, "us-counties-topojson.json")
+    // .defer(d3.csv, "counties/ACS_11_5YR_B12002.csv", function(d) {
+    //   census.set(d['GEO.id2'], new Location(d));
+    // })
+    // .defer(d3.json, "statistical-areas-topojson.json")
+    .defer(d3.json, "https://s3.amazonaws.com/jsoma/msa_centroids.json")
+    // .defer(d3.csv, "MSAs/ACS_06_EST_B12002.csv", function(d) {
+    //.defer(d3.csv, "MSAs/ACS_12_3YR_B12002.csv", function(d) {
+    .defer(d3.csv, "https://s3.amazonaws.com/jsoma/ACS_12_3YR_B12002.csv", function(d) {
+      return census.set(d['GEO.id2'], new Location(d));
+    })
+    .await(ready);
+
+var locations;
+var under;
+var notesSVG, notesHTML;
+var start, end;
+var isReady = false;
+var seeking = valueDisplays[0];
+
+function ready(error, us, geography) {
+  attachEvents();
+  
+  svg.append("path")
+      .datum(topojson.feature(us, us.objects.land))
+      .attr("class", "land")
+      .attr("d", path);
+
+  svg.append("path")
+      .datum(topojson.mesh(us, us.objects.states, function(a, b) { return a !== b; }))
+      .attr("class", "states")
+      .attr("d", path);
+
+  geography.forEach( function(geo) {
+   centroids.set(geo[0], [ geo[1], geo[2] ]);
+  })
+
+  under = svg.append("g")
+
+  locations = svg.append("g")
+       .attr("class", "msa")
+       .selectAll("circle")
+
+  isReady = true;
+
+  drawGraph();
+  refreshAge();
+  populateFromUrl();
+};
+
+function redraw() {
+  if(!isReady)
+    return;
+  
+  drawNotes();
+  updateKey();
+  drawGuide();
+
+  locations = locations.data(currentData(), function(d) { 
+    return d.id ;
+  } );
+  
+  locations.exit().remove();
+    
+  locations.enter()
+    .append("circle")
+    .attr("cx", function(d) { 
+      var centroid = centroids.get(d.id);
+      if(d.id == 26180) { return projection([-157.8583, 21.3069])[0]; }
+      return projection(centroid || 0)[0];
+    })
+    .attr("cy", function(d) { 
+      var centroid = centroids.get(d.id);
+      if(d.id == 26180) { return projection([-157.8583, 21.3069])[1]; }
+      return projection(centroid || 0)[1];
+    })
+    .attr("singles-data-id", function(d) {        
+      return d.id;
+    })
+    .on("mouseover", function(d) {        
+       $(this).addClass('nearby');
+    })
+    .attr('r', 0)
+    .attr('fill', "#FFFFFF");
+    
+  locations.transition()
+    .duration(500)
+    .attr('fill', function(d) {
+      switch(d.sex) {
+        case 'men': return '#3B8CC7';
+        case 'women': return '#DE6565';
+        case 'none': return '#FFFFFF'
+      }
+    })
+    .attr('r', function(d) {
+      return seeking.compute(d);      
+    });
+
+  $(".loader").hide();
+  $(".graph").css('visibility','visible');
+  $(".slider-holder").css('visibility','visible');
+}
+
+function changeMinimumPopulation(direction) {
+  var index = populationOptions.indexOf(minimumPopulation) + direction;
+  if(index < populationOptions.length && index >= 0) {
+    minimumPopulation = populationOptions[ populationOptions.indexOf(minimumPopulation) + direction ];
+    updateUrl();
+  }
+  redraw();
+}
+
+function attachEvents() {
+  $(".key .seeking").click( function() {
+    seeking = valueDisplays[ (valueDisplays.indexOf(seeking) + 1) % valueDisplays.length];
+    updateUrl();
+    redraw();
+  });
+
+  $(".key .more-pop").click( function() { 
+    changeMinimumPopulation( 1); 
+    updateUrl();
+    return false;
+  } );
+  $(".key .less-pop").click( function() { 
+    changeMinimumPopulation(-1); 
+    updateUrl();
+    return false;
+  } );
+}
+
+function currentData() {
+  var currentStart = start, currentEnd = end;
+  
+  return census.values()
+    .filter( function(d) {
+      return d.population > minimumPopulation;
+    })
+    .map( function(d) { 
+      return d.toData(currentStart, currentEnd ); 
+    });
+}
+
+function updateUrl() {
+  location.hash = start + "/" + end + "/" + populationOptions.indexOf(minimumPopulation) + "/" + valueDisplays.indexOf(seeking);
+}
+
+function populateFromUrl() {
+  var pieces = location.hash.replace('#','').split("/");
+  if(pieces.length == 4) {
+   $("#slider").slider("value", ages[ parseInt(pieces[0]) ], ages[ parseInt(pieces[1]) ]);
+    minimumPopulation = populationOptions[parseInt(pieces[2])];
+    seeking = valueDisplays[parseInt(pieces[3])];
+  }
+}
+
+function makeSlider() {
+   $("#slider").slider({ 
+     from: 18,
+     to: 64,
+     limits: false, 
+     heterogeneity: ageScale,
+     // scale: usedAges,
+     calculate: function(value) {
+       return value;
+     },
+     step: 1, 
+     labels: false, 
+     callback: function() {
+       refreshAge();
+       updateUrl();
+     },
+     onstatechange: function() {
+       refreshAge();
+     }
+  });
+}
+
+function refreshAge() {
+  if(!isReady)
+    return;
+
+  var sliderValues = $("#slider").slider("calculatedValue").split(";")
+
+  var newStart = leftScale(parseInt(sliderValues[0]));
+    newEnd = rightScale(parseInt(sliderValues[1]));
+
+  if(newStart == start && newEnd == end)
+    return
+
+  start = newStart;
+  end = newEnd;
+
+  $(".youngest").text(ages[newStart]);
+  
+  if(newEnd >= ages.length - 1) {
+    $(".oldest").text("85+");
+  } else {
+    $(".oldest").text(ages[newEnd + 1] - 1);
+  }
+
+  redraw();
+}
+
+function calculateDistance(elem, mouseX, mouseY) {
+    var leftOffset = elem.offset().left;
+    var topOffset = elem.offset().top;
+    if(leftOffset - mouseX > 200 || topOffset - mouseY > 200)
+      return 1000;
+    return Math.floor(Math.sqrt(Math.pow(mouseX - (elem.offset().left+(elem[0].getBoundingClientRect().width/2)), 2) + Math.pow(mouseY - (elem.offset().top+(elem[0].getBoundingClientRect().height/2)), 2)));
+}
+
+function numberWithCommas(n) {
+    return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+$(document).ready( function() {
+  $("img").unveil(200);
+  makeSlider();
+})
+
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-5541738-17', 'jonathansoma.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

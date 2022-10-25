@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+	        <!-- charset must remain utf-8 to be handled properly by Processing -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>The New, Interactive Singles Map. Or, Looking for Love in All the Statistically Wrong Places.</title>
+		<style type="text/css">
+			body {
+				margin: 0;
+				padding: 0;
+				font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+				color: #1e1e1e;
+				text-align: center;
+				/* background: url('background.gif') repeat-y center center; */
+				font-size: 11px;
+			}
+			
+			#content {
+				width: 850px;
+				margin: auto;
+				background-color: white;
+				border: solid black 0px;
+				border-left-width: 1px;
+				border-right-width: 1px;
+			}
+
+			.body {
+				text-align: left; 
+				background-color: white;
+				padding: 0 100px 0px 100px;
+			}
+			
+			.body.last {
+				padding-bottom: 10px;
+			}
+			
+			.info {
+				background-color: #f0555b;
+				margin-bottom: 20px;
+			}
+			
+			.info.alt {
+				background-color: #1d89ca;
+			}
+			
+			h2 { 
+				margin: 0; 
+				padding: 0; 
+				font-size: 48px;
+				margin-top: 15px;
+				line-height: 40px;
+				padding-bottom: 10px;
+			}
+			
+			ul, p { 
+				margin: 0; 
+				padding-bottom: 10px; 
+				padding-left: 10px;
+				margin-left: 20px;
+				background-color: white;
+			}
+			
+			ul {
+				padding-left: 25px;h
+			}
+			
+			ul li {
+				margin-bottom: 3px;
+			}
+			
+			#Singles_container {
+				margin-bottom: 35px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="content">
+
+			<div id="Singles_container">
+			
+			<!--[if !IE]> -->
+				<object classid="java:Singles.class" 
+            			type="application/x-java-applet"
+            			archive="Singles.jar"
+            			width="850" height="626"
+            			standby="Loading Processing software..." >
+            			
+					<param name="archive" value="Singles.jar" />
+				
+					<script type="text/javascript">
+					var results;
+					if( results = window.location.href.match(/n=(\d+)&x=(\d+)&a=(\d+)/) ) {
+						document.write('<param name="min_age" value="' + results[1] + '" />');
+						document.write('<param name="max_age" value="' + results[2] + '" />');
+						document.write('<param name="adjusted_mode" value="' + results[3] + '" />');
+					}
+					</script>
+					
+					<param name="mayscript" value="true" />
+					<param name="scriptable" value="true" />
+				
+					<param name="image" value="loading.gif" />
+					<param name="boxmessage" value="Loading Processing software..." />
+					<param name="boxbgcolor" value="#FFFFFF" />
+				
+					<param name="test_string" value="outer" />
+			<!--<![endif]-->
+				
+				<object classid="clsid:8AD9C840-044E-11D1-B3E9-00805F499D93" 
+						codebase="http://java.sun.com/update/1.4.2/jinstall-1_4_2_12-windows-i586.cab"
+						width="850" height="626"
+						standby="Loading Processing software..."  >
+						
+					<param name="code" value="Singles" />
+					<param name="archive" value="Singles.jar" />
+					
+					<script type="text/javascript">
+					var results;
+					if( results = window.location.href.match(/n=(\d+)&x=(\d+)&a=(\d+)/) ) {
+						document.write('<param name="min_age" value="' + results[1] + '" />');
+						document.write('<param name="max_age" value="' + results[2] + '" />');
+						document.write('<param name="adjusted_mode" value="' + results[3] + '" />');
+					}
+					</script>
+										
+					<param name="mayscript" value="true" />
+					<param name="scriptable" value="true" />
+					
+					<param name="image" value="loading.gif" />
+					<param name="boxmessage" value="Loading Processing software..." />
+					<param name="boxbgcolor" value="#FFFFFF" />
+					
+					<param name="test_string" value="inner" />
+					
+					<p>
+						<strong>
+							This browser does not have a Java Plug-in.
+							<br />
+							<a href="http://java.sun.com/products/plugin/downloads/index.html" title="Download Java Plug-in">
+								Get the latest Java Plug-in here.
+							</a>
+						</strong>
+					</p>
+				
+				</object>
+				
+			<!--[if !IE]> -->
+				</object>
+			<!--<![endif]-->
+			
+			</div>
+			
+			<div class="body last">
+				<h2>Here is a map.</h2>
+				<div class="info">
+					<p>Once upon a time there was a <strong><a href="http://www.boston.com/bostonglobe/ideas/articles/2008/03/30/a_singles_map_of_the_united_states_of_america/">map of singles</a> in major areas across the United States</strong>. "A quarter million extra single ladies in New York City!" it touted, "Hundreds of thousands of unattached men on the West Coast!" leaving in its wake:</p>
+					<ul>
+						<li>Every lady in NYC complaining about the statistical improbabilities of dating</li>
+						<li>50% of Californian males booking U-Hauls</li>
+						<li>Me, congratulating myself on living in New York</li>
+					</ul>
+					<p>Your odds actually weren't as good (or bad) as the map let on, though, because it was missing just that: odds. Take those 210k ladies and spread them over the entire NYC-New Jersey-Nothern PA area and what've you got? Answer: <strong>not that much!</strong> Your odds of meeting a single woman in the general population is 10% better in Ashville, NC. (But lest your souls despair, the West Coast is still definitely boytown.)</p>
+					<!-- <p>Math is like ethics: <strong>Never believe in absolutes.</strong></p> -->
+					<p>So, I made this map. Everything is now cut with the general population, so you'll now <em>finally</em> know where to move to give your heart the love it deserves &mdash; oh, unless you hit the spacebar. <strong>Then you'll see the original, absolute differences, which are fun despite being horribly misleading</strong>.</p>
+				</div>
+				<h2>An age of ageism</h2>
+				<div class="info alt">
+					<p>I'm going to be honest, I'm not too into dating someone 40 years older than me. Overly selective, I know, but a common enough thought that we come to the second problem with the original map: <strong>It counted all singles between the ages of 20-64</strong>.</p>
+					<p>Let's not go into the reasons why that huge ol' range is silly. Let's go into what you can do about it: <strong>there's a slider up top. On the right. <em>Slide it.</em></strong> This will change the age range of the single you're viewing. If you grab ahold of the little piece in the middle you can move a range back and forth, so if you're generally a +/- 5 years kind of dater you can set it up for 20-29 and swing it up and down the spectrum.</p>
+					<p>And just how <em>do</em> those odds adjust with age?</p>
+				</div>
+				<h2>Just how those odds adjust with age</h2>
+				<div class="info">
+					<p><strong>Ladies:</strong> After your mid 40's, you will be fighting tooth and nail for the nine or ten single men.</p>
+					<p><strong>Gents:</strong> Single men become a rare commodity later in life, and we all know what happens then. They don't call it <a href="http://en.wikipedia.org/wiki/Supply_and_demand#Vertical_supply_curve_.28Perfectly_Inelastic_Supply.29" target="_new">Perfectly Inelastic Supply</a> for nothing!</p>
+					<p><strong>Gals:</strong> Do single young girls exist? Not according to math! Fact: <strong>around 1/3 of 20-24 year old women are married.</strong> Only 70% are single!</p>
+					<p><strong>Guys:</strong> Again, fact: <strong>Only 1/5 of men are married by age 24.</strong> 80% single! Like suburban deer, there are too many of you in relation to your prey, and you're destroying each others' game. Older, wiser deer who don't spend their time doing kegstands are snapping up your lady-foliage.</p>
+				</div>
+				<!-- 				<h2>Social adaptation and the making of the milf</h2>
+								<div class="info alt">
+									<p>Or: evolution and the <strong>creation of the cougar!</strong> Or: let's make a play at pop psychology!</p>
+									<p>Let's imagine a situation much like the one we've got now: billions of single, nubile young men, wandering the streets lost and alone. And across the gender pond, billions of unattached, sultry ladies! Oh, such a bleak world to spend our weary lives in!</p>
+									<p>Like top and bottom quarks in an underground club, these groups were socioscientifically built for each other. Magnets to magnets, they were predestined to invent silly names for each other and end up in each others' arms.</p>
+								</div> -->
+				<h2>Cocktail party lines</h2>
+				<div class="info alt">
+						<p>Let's work on the facts that you'll use to wow these possible mates:</p>
+					<ul>
+						<li>Did you know that the only <strong>two places</strong> with a surplus of women in the 20-29 age bracket are New Orleans, LA and Springfield, MA? Lynchburg, VA pops up, too, if you lower the minimum required population.</li>
+						<li>The switchover from extra men to extra women starts at 35-39 for most big East Coast cities, but <strong>doesn't hit New York until 40-44.</strong></li>
+						<li>Reno, NV is the main male holdout after the age of 45.</li>
+						<li>Please be tricked into thinking that women are distributed across the Appalachian Trail. <em>What are you ladies planning?</em></li>
+						<li>With the surplus of unmarried young men and unmarried older women I hope someone will write a thesis called <strong>Social Adaptation and the Creation of the Cougar</strong></li>
+					</ul>
+				</div>
+				<h2>Bzzzt</h2>
+				<div class="info">
+					<p>Sure, there are some issues with the map. The first: <strong>homosexuality!</strong> This data and this map are completely
+						heteronormative, but please direct invective at our pal the Census Bureau. Also, I don't think I can really
+						trust the internet on this one, but men are about twice as likely to identify as gay than women - what's this mean
+						for the map? It'll skew hard towards there being a ton of unmarried men! Those lonely young single guys might
+						actually be in perfectly marriageable relationships, but prevented from tying a federal-government-approved knot.</p>
+					<p>Next: <strong>Population density!</strong> We're only using the US Census Bureau's Metropolitan Statistical Areas (and 
+						some Micropolitan ones, too), so we're missing out on the more rural aspect of America. What's this mean? I sure don't
+						know the answer.</p>
+					<p>Oh, and I've heard people also <strong>date</strong>, they don't just get married. Totally not reflected mapwise.</p>
+				</div>
+				<h2>Have some data!</h2>
+				<div class="info alt">
+					<p>To those of you interested in how things were calculated:</p>
+					<ul>
+						<li>Data courtesy US Census Bureau's 2006 <a href="http://www.census.gov/acs/www/Products/index.html" target="_new">American Community Survey</a>, marital status by sex and age.</li>
+						<li><strong>Single</strong> is counted as being never married, divorced or widowed. <strong>Married</strong> is... married.</li>
+						<li>The unadjusted figures are <strong>|single women - single men|</strong>, the adjusted figures are <strong>|single women - single men| / local population</strong></li>
+						<li>Built using <a href="http://www.processing.org" target="_new">Processing</a>, which is a Java-based programming
+							language + tools to do arty things.</li>
+						<li>The map is from Ben Fry's Processing-centric book 
+							<a href="http://www.amazon.com/exec/obidos/ASIN/0596514557/singles01-20/ref=nosim/" target="_new">Visualizing Data</a>, 
+							which is <em>great</em>. I've also got 
+							<a href="http://www.amazon.com/exec/obidos/ASIN/0262182629/singles01-20/ref=nosim/" target="_new">Processing: A Programming
+								Handbook for Visual Designers and Artists</a>, which is a little more reference-y but also useful.</li>
+						<li>Quantity is related to the area of the circle, not the radius. When I finally realized that it was a seismic event!</li>
+						<li>Geocoding via the ever-fantastic <a href="http://geocoder.ca" target="_new">geocoder.ca</a></li>
+					</ul>
+				</div>
+				<h2>Who am I?</h2>
+				<div class="info">
+					<p>I'm <strong>Soma</strong>. I make things. I live in Brooklyn, but unfortunately the part where everyone's married, so I chalk this 
+						map up to Not Geographically Specific Enough. Disclaimer: Remember the time I got a <strong>D+ in statistics</strong> second year of college? I do! I have a site I never update at 
+						<a href="http://www.xoxosoma.com" target-"_new">www.xoxosoma.com</a>, and
+						you can track me down at <a href="mailto:jonathan.soma@gmail.com">jonathan.soma@gmail.com</a>. There's another project I did you might
+like called <a href="http://www.xoxosoma.com/tokyo-tuesday">Tokyo Tuesday</a></p>
+					<p>Google ads make this page ugly,
+						so if you want you want your actions to help my wallet, just use <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=jonathan%2esoma%40gmail%2ecom&item_name=i%20love%20women%20or%20men%20or%20maps%20or%20data%20or%20negative%20cashflow&no_shipping=0&no_note=1&tax=0&currency_code=USD&lc=US&bn=PP%2dDonationsBF&charset=UTF%2d8" target="_new">paypal</a>. Give me two or three hundred dollars, I think it could be fun for the both of us.</p>
+				</div>
+				<h2>E-t-c</h2>
+				<div class="info alt">
+					<p>Oh hey, <a href="http://gawker.com/5046816/corrected-singles-map-means-ladies-get-to-have-standards-again" target="_new">Gawker!</a> <a href="http://www.metafilter.com/74767/Interactive-Singles-Map-shows-you-where-the-ladies-at">Metafilter!</a> <a href="http://blogs.wsj.com/numbersguy/date/2008/09/18/">Wall Street Journal!</a> <a href="http://neatorama.com/2008/09/12/where-the-single-people-are/">Neatorama!</a> Then there was a time it made the political circuit via <a href="http://www.prospect.org/csnc/blogs/ezraklein_archive?month=10&year=2008&base_name=map_of_the_day_hot_sexy_single">Ezra Klein</a> => <a href="http://yglesias.thinkprogress.org/archives/2008/10/where_the_singles_are.php">Matt Yglesias</a> => <a href="http://andrewsullivan.theatlantic.com/the_daily_dish/2008/10/where-the-singl.html">Andrew Sullivan</a>, that was fun.</p>
+					<p>If you'd like some images to blog about this with but hate taking screenshots, I set up <a href="kit/">this kit</a> to make your life easier.</p>
+				</div>
+			</div>
+
+		</div>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-5541738-17', 'jonathansoma.com');
+    ga('send', 'pageview');
+
+  </script>
+
+	</body>
+</html>
